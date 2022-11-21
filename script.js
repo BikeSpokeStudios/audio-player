@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     var music = document.getElementById('music');  // id for audio element
-    var pButton = document.getElementById('pButton'); // id for play button
-    var volumeBtn = document.getElementById('volumeBtn'); // id for volume change button
+    var pButton = document.getElementById('pButton'); // id for play toggle button
+    var playBtn = document.getElementById('player-play'); // id for play icon
+    var pauseBtn = document.getElementById('player-pause'); // id for pause
+
     // play button event listenter
     pButton.addEventListener("click", play);
     // Play and Pause
@@ -10,13 +12,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (music.paused) {
             music.play();
             //remove play, add pause
-            pButton.className = "";
-            pButton.className = "pause";
+            playBtn.style.display = "none";
+            pauseBtn.style.display = "block";
         } else {  // pause music
             music.pause();
             // remove pause, add play
-            pButton.className = "";
-            pButton.className = "play";
+            playBtn.style.display = "block";
+            pauseBtn.style.display = "none";
         }
     }
     const volume = document.querySelector("#volume");

@@ -1,15 +1,20 @@
 #pButton{
-	height:60px;
-	width: 60px;
+	height:120px;
+	width: 120px;
 	border: none;
 	background-size: 50% 50%;
 	background-position: center;
     float: left;
+	background-color: transparent;
 }
-#volumeBtn {
-    height: 60px;
-    width: 60px;
-    border: 2px solid blue;
+#player-pause {
+	display: none;
 }
-.play{background: url('./assets/play-fill.svg') no-repeat;}
-.pause{background: url('./assets/pause-fill.svg') no-repeat;}
+#pButton:hover div svg path {
+	fill: blue;
+}
+
+/* #player-play svg path:hover, #player-pause svg path:hover {
+	fill: blue;
+} */
+
