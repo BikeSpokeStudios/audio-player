@@ -1,6 +1,6 @@
 #pButton{
-	height:120px;
-	width: 120px;
+	height:60px;
+	width: 60px;
 	border: none;
 	background-size: 50% 50%;
 	background-position: center;
@@ -13,8 +13,14 @@
 #pButton:hover div svg path {
 	fill: blue;
 }
-
-/* #player-play svg path:hover, #player-pause svg path:hover {
+.showname {
+	display: inline-block;
+}
+.showname p {
+	display: inline-block;
+}
+.volumeLabel:hover svg path {
 	fill: blue;
-} */
+}
+
 
