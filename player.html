@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" /> 
+    </head>
+    <body>
+        <audio id="music" preload="auto" >
+            <source src="https://audio.cfrc.ca/stream" type="audio/mpeg" />
+        </audio>
+        <div id="audioplayer" class="desktop-visible">
+            <button id="pButton" class="play"></button>              
+            </div>
+        </div>
+        <div id="showName" class="showname">
+            <p>Now Playing:</p>
+            <p>David's Show</p>
+        </div>
+        <label for="volume">Volume: </label>
+        <input
+        type="range"
+        name="volume"
+        id="volume"
+        min="0.0"
+        max="1.0"
+        step="0.05"
+        value="1.0" />
+        <output class="volume-output" for="volume"></output>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
