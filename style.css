@@ -11,5 +11,5 @@
     width: 60px;
     border: 2px solid blue;
 }
-.play{background: url('../assets/play-fill.svg') no-repeat;}
-.pause{background: url('../assets/pause-fill.svg') no-repeat;}
+.play{background: url('/assets/play-fill.svg') no-repeat;}
+.pause{background: url('/assets/pause-fill.svg') no-repeat;}
