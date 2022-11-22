@@ -35,23 +35,22 @@ label {
 #player-pop-up {
 	margin-left: 20px;
 }
-/* CSS TRICKS CODE */
 
 input[type=range] {
 	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
 	width: 100%; /* Specific width is required for Firefox. */
 	background: transparent; /* Otherwise white in Chrome */
-  }
-  
-  input[type=range]::-webkit-slider-thumb {
+}
+
+input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
-  }
-  
-  input[type=range]:focus {
-	outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-  }
-  
-  input[type=range]::-ms-track {
+}
+
+input[type=range]:focus {
+	outline: none; /* Removes the blue border. */
+}
+
+input[type=range]::-ms-track {
 	width: 100%;
 	cursor: pointer;
   
@@ -59,13 +58,8 @@ input[type=range] {
 	background: transparent; 
 	border-color: transparent;
 	color: transparent;
-  }
+}
 
-
-/* EQUALIZER CODE */ 
-
-/* Slider *
- * ====== */
 /* ## Slider main element */
 input[type='range'] {
   display: block;
@@ -107,7 +101,7 @@ input[type='range']::-moz-range-thumb {
     box-shadow: -144px 0 0 0 #313131, -128px 0 0 0 #2F343F, -112px 0 0 0 #283F6B, -96px 0 0 0 #214893, -80px 0 0 0 #1A52BC, -64px 0 0 0 #2769D3, -48px 0 0 0 #3E87DC, -32px 0 0 0 #55A5E6, -16px 0 0 0 #6FC5F0, 16px 0 0 0 #181818, 32px 0 0 0 #181818, 48px 0 0 0 #181818, 64px 0 0 0 #181818, 80px 0 0 0 #181818, 96px 0 0 0 #181818, 112px 0 0 0 #181818, 128px 0 0 0 #181818, 144px 0 0 0 #181818;
     cursor: ew-resize;
 }
-/* */
+
 /* ### Slider::-thumb */
 input[type='range']::-webkit-slider-thumb {
     margin: .05em; 
@@ -134,7 +128,7 @@ input[type='range']::-ms-thumb {
 	box-shadow: -144px 0 0 0 #313131, -128px 0 0 0 #2F343F, -112px 0 0 0 #283F6B, -96px 0 0 0 #214893, -80px 0 0 0 #1A52BC, -64px 0 0 0 #2769D3, -48px 0 0 0 #3E87DC, -32px 0 0 0 #55A5E6, -16px 0 0 0 #6FC5F0, 16px 0 0 0 #181818, 32px 0 0 0 #181818, 48px 0 0 0 #181818, 64px 0 0 0 #181818, 80px 0 0 0 #181818, 96px 0 0 0 #181818, 112px 0 0 0 #181818, 128px 0 0 0 #181818, 144px 0 0 0 #181818;
 	cursor: ew-resize;
 } 
-/* ## Slider components */
+
 /* ### Slider::-track */
 input[type='range'],
 input[type='range']::-webkit-slider-runnable-track,
@@ -145,8 +139,7 @@ input[type='range']::-ms-track {
     height: 100%;
     width: 100%;
 }
-/* ## Browser tweaks */
-/* ### webkit */
+
 input[type='range'],
 input[type='range']::-webkit-slider-runnable-track,
 input[type='range']::-webkit-slider-thumb {
