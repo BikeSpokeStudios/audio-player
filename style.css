@@ -11,7 +11,7 @@
 	display: none;
 }
 #pButton:hover div svg path {
-	fill: blue;
+	fill: #6FC5F0;
 }
 .showname {
 	display: inline-block;
@@ -23,7 +23,17 @@ label {
 	color: black;
 }
 .volumeLabel:hover svg path {
-	fill: blue;
+	fill: #6FC5F0;
+}
+.player-button {
+	color: black;
+	display: inline-block;
+}
+.player-button:hover svg path {
+	fill:  #6FC5F0;
+}
+#player-pop-up {
+	margin-left: 20px;
 }
 /* CSS TRICKS CODE */
 

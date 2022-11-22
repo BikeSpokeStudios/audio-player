@@ -8,12 +8,12 @@
         </audio>
         <div id="audioplayer" class="desktop-visible">
             <button id="pButton">
-                <div id="player-play">
+                <div id="player-play" class="player-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
                         <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
                     </svg>
                 </div>
-                <div id="player-pause">  
+                <div id="player-pause" class="player-button">  
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
                         <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
                     </svg>          
@@ -24,7 +24,7 @@
             <p>Now Playing:</p>
             <p>Program</p>
         </div>
-        <label id="muteControl" class="volumeControl volumeLabel" for="volume">
+        <label id="muteControl" class="volumeControl volumeLabel player-button" for="volume">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
                 <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
                 <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
@@ -32,15 +32,34 @@
               </svg>
         </label>
         
-            <input
-                type="range"
-                name="volume"
-                id="volume"
-                min="0.1"
-                max="1.0"
-                step="0.1"
-                value="1.0" />
-        
+        <input
+            type="range"
+            name="volume"
+            id="volume"
+            min="0.1"
+            max="1.0"
+            step="0.1"
+            value="1.0" />
+
+        <a href="/index.html"
+        onclick="window.open(this.href,'targetWindow',
+                                        `toolbar=no,
+                                            location=no,
+                                            status=no,
+                                            menubar=no,
+                                            scrollbars=yes,
+                                            resizable=yes,
+                                            width=550,
+                                            height=200`);
+        return false;">
+            <div id="player-pop-up" class="player-button">  
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                </svg>
+            </div>
+        </a>
+             
         <script src="script.js"></script>
     </body>
 </html>
