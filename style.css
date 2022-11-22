@@ -25,6 +25,34 @@ label {
 .volumeLabel:hover svg path {
 	fill: blue;
 }
+/* CSS TRICKS CODE */
+
+input[type=range] {
+	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+	width: 100%; /* Specific width is required for Firefox. */
+	background: transparent; /* Otherwise white in Chrome */
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+	outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  
+  input[type=range]::-ms-track {
+	width: 100%;
+	cursor: pointer;
+  
+	/* Hides the slider so custom styles can be added */
+	background: transparent; 
+	border-color: transparent;
+	color: transparent;
+  }
+
+
+/* EQUALIZER CODE */ 
 
 /* Slider *
  * ====== */
@@ -34,9 +62,10 @@ input[type='range'] {
   margin: 0; 
   padding: 0;
   font-size: inherit;
-  width: 9.9em; height: 1em;
+  width: 162px; 
+  height: 1.5em;
   border-radius: .25em;
-  border: .2em solid #242424;
+  border: 2px solid #242424;
   background-color: #242424;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -52,22 +81,46 @@ input[type='range']:hover { box-shadow: 0 0 0 .15em #6FC5F0; }
 input[type='range'] {
     display: inline-block; 
 }
-input[type='range']::-webkit-slider-thumb { cursor: ns-resize; }
+ 
 input[type='range']::-moz-range-thumb { 
-	cursor: ns-resize; 
 	margin: .05em; 
 	padding: 0;
     height: .9em; 
-	width: .9em;
-    border-radius: .1em;
+	width: 14px;
+    border-radius: .1em; 
     box-sizing: border-box;
     border: none;
     background-color: #6FC5F0;
-    box-shadow: -10em 0 0 0 #313131, -9em 0 0 0 #313131, -8em 0 0 0 #2F343F, -7em 0 0 0 #283F6B, -6em 0 0 0 #214893, -5em 0 0 0 #1A52BC, -4em 0 0 0 #2769D3, -3em 0 0 0 #3E87DC, -2em 0 0 0 #55A5E6, -1em 0 0 0 #6FC5F0, 1em 0 0 0 #181818, 2em 0 0 0 #181818, 3em 0 0 0 #181818, 4em 0 0 0 #181818, 5em 0 0 0 #181818, 6em 0 0 0 #181818, 7em 0 0 0 #181818, 8em 0 0 0 #181818, 9em 0 0 0 #181818;
+    box-shadow: -144px 0 0 0 #313131, -128px 0 0 0 #2F343F, -112px 0 0 0 #283F6B, -96px 0 0 0 #214893, -80px 0 0 0 #1A52BC, -64px 0 0 0 #2769D3, -48px 0 0 0 #3E87DC, -32px 0 0 0 #55A5E6, -16px 0 0 0 #6FC5F0, 16px 0 0 0 #181818, 32px 0 0 0 #181818, 48px 0 0 0 #181818, 64px 0 0 0 #181818, 80px 0 0 0 #181818, 96px 0 0 0 #181818, 112px 0 0 0 #181818, 128px 0 0 0 #181818, 144px 0 0 0 #181818;
     cursor: ew-resize;
 }
-input[type='range']::-ms-thumb { cursor: ns-resize; } 
+/* */
+/* ### Slider::-thumb */
+input[type='range']::-webkit-slider-thumb {
+    margin: .05em; 
+	padding: 0;
+    height: .9em; 
+	width: 14px;
+    border-radius: .1em; 
+    box-sizing: border-box;
+    border: none;
+    background-color: #6FC5F0;
+    box-shadow: -144px 0 0 0 #313131, -128px 0 0 0 #2F343F, -112px 0 0 0 #283F6B, -96px 0 0 0 #214893, -80px 0 0 0 #1A52BC, -64px 0 0 0 #2769D3, -48px 0 0 0 #3E87DC, -32px 0 0 0 #55A5E6, -16px 0 0 0 #6FC5F0, 16px 0 0 0 #181818, 32px 0 0 0 #181818, 48px 0 0 0 #181818, 64px 0 0 0 #181818, 80px 0 0 0 #181818, 96px 0 0 0 #181818, 112px 0 0 0 #181818, 128px 0 0 0 #181818, 144px 0 0 0 #181818;
+    cursor: ew-resize;
+} 
 
+input[type='range']::-ms-thumb {
+    margin: .05em; 
+	padding: 0;
+    height: .9em; 
+	width: 14px;
+    border-radius: .1em; 
+    box-sizing: border-box;
+    border: none;
+    background-color: #6FC5F0;
+	box-shadow: -144px 0 0 0 #313131, -128px 0 0 0 #2F343F, -112px 0 0 0 #283F6B, -96px 0 0 0 #214893, -80px 0 0 0 #1A52BC, -64px 0 0 0 #2769D3, -48px 0 0 0 #3E87DC, -32px 0 0 0 #55A5E6, -16px 0 0 0 #6FC5F0, 16px 0 0 0 #181818, 32px 0 0 0 #181818, 48px 0 0 0 #181818, 64px 0 0 0 #181818, 80px 0 0 0 #181818, 96px 0 0 0 #181818, 112px 0 0 0 #181818, 128px 0 0 0 #181818, 144px 0 0 0 #181818;
+	cursor: ew-resize;
+} 
 /* ## Slider components */
 /* ### Slider::-track */
 input[type='range'],
@@ -79,26 +132,6 @@ input[type='range']::-ms-track {
     height: 100%;
     width: 100%;
 }
-
-/* ### Slider::-thumb */
-input[type='range']::moz-range-thumb
-/*
-input[type='range']::-webkit-slider-thumb,
-input[type='range']::-moz-range-thumb,
-input[type='range']::-ms-thumb  */
-{
-    margin: .05em; 
-	padding: 0;
-    height: .9em; 
-	width: .9em;
-    border-radius: .1em;
-    box-sizing: border-box;
-    border: none;
-    background-color: #6FC5F0;
-    box-shadow: -10em 0 0 0 #313131, -9em 0 0 0 #313131, -8em 0 0 0 #2F343F, -7em 0 0 0 #283F6B, -6em 0 0 0 #214893, -5em 0 0 0 #1A52BC, -4em 0 0 0 #2769D3, -3em 0 0 0 #3E87DC, -2em 0 0 0 #55A5E6, -1em 0 0 0 #6FC5F0, 1em 0 0 0 #181818, 2em 0 0 0 #181818, 3em 0 0 0 #181818, 4em 0 0 0 #181818, 5em 0 0 0 #181818, 6em 0 0 0 #181818, 7em 0 0 0 #181818, 8em 0 0 0 #181818, 9em 0 0 0 #181818;
-    cursor: ew-resize;
-}
-  
 /* ## Browser tweaks */
 /* ### webkit */
 input[type='range'],
