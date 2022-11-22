@@ -62,10 +62,13 @@ input[type='range'] {
   margin: 0; 
   padding: 0;
   font-size: inherit;
-  width: 162px; 
+  width: 168px; 
   height: 1.5em;
   border-radius: .25em;
-  border: 2px solid #242424;
+  border-top: 2px solid #242424;
+  border-bottom: 2px solid #242424;
+  border-right: 5px solid #242424;
+  border-left: 5px solid #242424;
   background-color: #242424;
   background-size: 100% 100%;
   background-repeat: no-repeat;
